@@ -15,7 +15,7 @@ if __name__ == "__main__":
     sys.argv = [
         "streamlit",
         "run",
-        resolve_path("sample_app.py"),
+        resolve_path("../sample_app.py"),
         "--global.developmentMode=false",
     ]
     sys.exit(stcli.main())
