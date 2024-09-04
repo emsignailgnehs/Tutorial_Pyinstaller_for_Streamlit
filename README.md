@@ -49,13 +49,13 @@ if __name__ == "__main__":
     sys.argv = [
         "streamlit",
         "run",
-        resolve_path("sample_app.py"),
+        resolve_path("../sample_app.py"),
         "--global.developmentMode=false",
     ]
     sys.exit(stcli.main())
 ```
-In the above script, the .exe file will look for the python code "sample_app.py" under the same folder of itself.
-3. Only the packages associated with the script that is compiled will be compiled. Thus, in order to utilize other packages in your app ("sample_app.py" in this sample project), one needs to include packages at the activation file ("run_app.py" here).
+In the above script, the .exe file will look for the python code "../sample_app.py" under the grandparent folder of itself.
+4. Only the packages associated with the script that is compiled will be compiled. Thus, in order to utilize other packages in your app ("sample_app.py" in this sample project), one needs to include packages at the activation file ("run_app.py" here).
 ```python
 """imported_packages.py"""
 import serial
